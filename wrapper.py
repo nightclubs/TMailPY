@@ -4,7 +4,7 @@ import requests, random
 
 class Mail:
     def __init__(self):
-        self.author = 'blog#8751'
+        self.discord = 'blog#8751'
         self.github = 'accusable'
  
     def create_email():
