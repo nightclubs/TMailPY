@@ -1,6 +1,6 @@
 from wrapper import *
 
-mail = Mail
+mail = Mail # no args are given so you dont have to do Mail(), if you do Mail() it will mess with the code.
 
 def get_email():
  print('generated email >> {}'.format(mail.create_email()))
