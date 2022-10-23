@@ -8,7 +8,7 @@ class Mail:
         self.github = 'accusable'
  
     def create_email():
-        email = 'mail_api_{}@lasagna.email'.format("".join(random.choices("abcdefghijklmnopqrstuvwxyz1234567890", k=5))) # formats random choices into the {}.
+        email = '{}@lasagna.email'.format("".join(random.choices("abcdefghijklmnopqrstuvwxyz1234567890", k=10))) # formats random choices into the {}.
         return email
 
     def get_mail(email):
