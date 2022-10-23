@@ -20,7 +20,7 @@ def check_mail():
 email = Email
 
 def get_email():
- print('generated email >> {}'.format(email.create_email('domain here'))) # the domains are lasagna.pro, rblx.rocks and linustechtips.email
+ print('generated email >> {}'.format(email.create_email('domain here'))) # the domains are @lasagna.pro, @rblx.rocks and @linustechtips.email
 
 
 def get_emails():
