@@ -51,11 +51,11 @@ class Email:
 
           else: 
             
-           return base_mail.json()['emails'] # gets the email response from base_mail json, then returns it for the user.
+           return base_mail.json()['emails'] 
     
     def check_mail(email_id):
         with requests.Session() as session:
           base_mail = session.get(
             'https://lasagna.pro/inbox/email/{}'.format(email_id)
           )
-          return base_mail.text # returns the data in a text format so its easy for the user to split it.
+          return base_mail.text
