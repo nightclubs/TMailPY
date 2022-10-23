@@ -1,11 +1,11 @@
 from wrapper import *
 
-mail = Mail # no args are given so you dont have to do Mail(), if you do Mail() it will mess with the code.
+mail = Mail
 
 def get_email():
  print('generated email >> {}'.format(mail.create_email()))
 
-# get_email()
+get_email()
 
 def get_emails():
  print('mail >> {}'.format(mail.get_mail('test@lasagna.email')))
@@ -16,3 +16,21 @@ def check_mail():
  print('content >> {}'.format(mail.check_mail('mail id'))) # the mail ID is the numbers in the link, you will see mail id when you use the get_emails function.
 
 # check_mail()
+
+# ----------------------------------- This top part uses lasagna.email domain only, the bottom part has 2 - 3 different domains!
+
+
+email = Email
+
+def get_email():
+ print('generated email >> {}'.format(email.create_email('domain here'))) # the domains are lasagna.pro, rblx.rocks and linustechtips.email
+
+
+def get_emails():
+ print('mail >> {}'.format(email.get_mail('test@lasagna.pro'))) # you could also choose from the other domains listed above!
+
+
+def check_mail():
+ print('content >> {}'.format(email.check_mail('mail id')))
+
+
