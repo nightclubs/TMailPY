@@ -57,5 +57,5 @@ class Email:
         with requests.Session() as session:
           base_mail = session.get(
             'https://lasagna.pro/inbox/email/{}'.format(email_id)
-          )
-          print(base_mail.text)
+          ).text
+          print(base_mail)
