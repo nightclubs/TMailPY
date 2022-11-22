@@ -1,4 +1,4 @@
-# pyLasgMail
+# TMailPY
 ### Python Temp-Mail Wrapper
 
 # How To Use?
